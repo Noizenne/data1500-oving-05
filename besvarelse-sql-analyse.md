@@ -6,27 +6,41 @@
 3.  `SELECT DISTINCT KatNr FROM Vare;`
 4.  `SELECT Fornavn, Etternavn, Stilling AS Jobbtittel FROM Ansatt;`
 
-1.  **Forklaring:** ...
+1.  **Forklaring:** 
+`SELECT * FROM Vare;` 
+Velger alle kolonner fra tabellen Vare.
 
-2.  **Forklaring:** ...
-
+2.  **Forklaring:** 
+`SELECT VNr, Betegnelse FROM Vare;`
+Velger kolonnene VNr og Betegnelse fra tabellen Vare;
 3.  **Forklaring:** ...
-
+`SELECT DISTINCT KatNr FROM Vare;`
+Velger kolonnen KatNR fra tabellen Vare, men med DISTINCT-klausen så tar det bort duplikater.
 4.  **Forklaring:** ...
+`SELECT Fornavn, Etternavn, Stilling AS Jobbtittel FROM Ansatt;`
+Velger kolonnene Fornavn, Etternavn, men Stilling-kolonnen blir omgjort til Jobtittel fra tabellen Ansatt.
 
 ## Oppgave 2: WHERE-klausulen
 1.  `SELECT * FROM Vare WHERE Pris > 500;`
 2.  `SELECT * FROM Ansatt WHERE Stilling = 'Salgssjef' AND Årslønn > 600000;`
 3.  `SELECT Fornavn, Etternavn FROM Kunde WHERE PostNr = '0001' OR PostNr = '0002';`
-4.  `SELECT Betegnelse FROM Vare WHERE NOT KatNr = 1;
+4.  `SELECT Betegnelse FROM Vare WHERE NOT KatNr = 1;`
 
-1.  **Forklaring:** ...
+1.  **Forklaring:** 
+`SELECT * FROM Vare WHERE Pris > 500;`
+Velger alle kolonner fra tabellen Vare hvor prisen er mer enn 500kr.
 
-2.  **Forklaring:** ...
+2.  **Forklaring:** 
+`SELECT * FROM Ansatt WHERE Stilling = 'Salgssjef' AND Årslønn > 600000;`
+Velger alle kolonner fra tabellen ansatt hvor Stilling-kolonnen er lik 'Salgssjef' og årslønn er mer enn 600000.
 
-3.  **Forklaring:** ...
+3.  **Forklaring:** 
+`SELECT Fornavn, Etternavn FROM Kunde WHERE PostNr = '0001' OR PostNr = '0002';`
+Velger Fornavn og Etternavn-kolonnene fra tabellen Kunde hvor PostNr er lik '0001' eller hvor PostNr er lik '0002'.
 
-4.  **Forklaring:** ...
+4.  **Forklaring:**
+`SELECT Betegnelse FROM Vare WHERE NOT KatNr = 1;`
+Velger Betegnelse fra tabellen Vare hvor KatNr ikke er lik 1.
 
 ## Oppgave 3: Gruppering og Sortering
 1.  `SELECT * FROM Vare ORDER BY Pris DESC;`
